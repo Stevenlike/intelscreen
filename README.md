@@ -1,4 +1,4 @@
-# intelscreen
+# intelscreen 专注可视化，3D可视化平台
 
 ## Project setup
 ```
