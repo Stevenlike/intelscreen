@@ -8,11 +8,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
-import * as uiKit from './components'
-import './assets/css/main.css'
+import store from './store' // vuex
+import * as uiKit from './components' // 组件
+import './assets/css/main.css' // 样式
 
+/**
+ * 组册 -- 全局注册处
+ **/
 Vue.use(uiKit.wThree)
+Vue.use(uiKit.wEchart)
 
 Vue.config.productionTip = false
 
@@ -21,3 +25,5 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+
+console.log(process.env.VUE_APP_SRC)

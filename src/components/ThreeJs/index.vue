@@ -25,14 +25,15 @@ export default {
     }
   },
   mounted() {
-    console.log(WEBGL)
+    // 判断浏览器是否支持webGL
     if (WEBGL.isWebGLAvailable()) {
       this.init()
       this.animate()
     } else {
-      var warning = WEBGL.getWebGLErrorMessage()
+      const warning = WEBGL.getWebGLErrorMessage()
       document.getElementById('container').appendChild(warning)
     }
+    window.addEventListener('resize', this.onresize, false)
   },
   methods: {
     init() {
@@ -57,8 +58,13 @@ export default {
     animate() {
       requestAnimationFrame(this.animate)
       this.mesh.rotation.x += 0.01
-      this.mesh.rotation.y += 0.02
+      this.mesh.rotation.y += 0.05
       this.renderer.render(this.scene, this.camera)
+    },
+    onresize() {
+      this.camera.aspect = window.innerWidth / window.innerHeight
+      this.camera.updateProjectionMatrix()
+      this.renderer.setSize(window.innerWidth, window.innerHeight)
     }
   }
 }

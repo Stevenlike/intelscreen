@@ -42,7 +42,7 @@ export const WEBGL = {
       2: window.WebGL2RenderingContext
     }
     var message =
-      'Your $0 does not seem to support <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation" style="color:#000">$1</a>'
+      '您的$0不支持 <a href="http://khronos.org/webgl/wiki/Getting_a_WebGL_Implementation" style="color:#000">$1</a>'
 
     var element = document.createElement('div')
     element.id = 'webglmessage'
@@ -56,9 +56,9 @@ export const WEBGL = {
     element.style.width = '400px'
     element.style.margin = '5em auto 0'
     if (contexts[version]) {
-      message = message.replace('$0', 'graphics card')
+      message = message.replace('$0', '显卡')
     } else {
-      message = message.replace('$0', 'browser')
+      message = message.replace('$0', '浏览器')
     }
     message = message.replace('$1', names[version])
     element.innerHTML = message
