@@ -2,10 +2,11 @@
   <div class="home">
     <!--<img alt="Vue logo" src="../assets/logo.png" />-->
     <echart
-      style="width:100%;height: 375px;"
+      style="width:100%;height: 375px;display: none"
       config="设备分布及状态--多色柱"
       ref="UtilizationYear"
     />
+    <three/>
   </div>
 </template>
 

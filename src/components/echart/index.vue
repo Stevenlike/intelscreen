@@ -76,6 +76,9 @@ export default {
   deactivated() {
     $(window).unbind('resize', this.resizeB)
   },
+  destroyed() {
+    $(window).unbind('resize', this.resizeB)
+  },
   methods: {
     refresh: function() {
       this.chart.setOption(this.option)
