@@ -21,12 +21,12 @@ import echarts from 'echarts'
 import { guid } from '@/utils/util'
 import $ from 'jquery'
 export default {
-  name: 'Echart',
+  name: 'echart',
   data() {
     return {
       hasError: false,
       err: '',
-      domID: 'd_' + guid(),
+      domID: 'e_' + guid(),
       option: null,
       chart: null,
       Width: null,

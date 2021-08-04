@@ -3,7 +3,7 @@
  * @Github: https://github.com/Stevenlike
  * @Date: 2021-02-23 19:36:22
  * @LastEditors: steven
- * @LastEditTime: 2021-02-25 10:20:13
+ * @LastEditTime: 2021-08-01 12:20:31
 -->
 <template>
   <section>
@@ -15,7 +15,7 @@
 import * as Three from 'three'
 import { WEBGL } from './isWebGL'
 export default {
-  name: 'index',
+  name: 'three',
   data() {
     return {
       camera: null,

@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
+  <div class="home" style="display: none">
     <!--<img alt="Vue logo" src="../assets/logo.png" />-->
-    <echart
-      style="width:100%;height: 375px;display: none"
+    <wjf-echart
+      style="width:100%;height: 375px;display: block"
       config="设备分布及状态--多色柱"
       ref="UtilizationYear"
     />
-    <three/>
+    <wjf-three style="display: block" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'About',
   components: {}
 }
 </script>
+<style></style>

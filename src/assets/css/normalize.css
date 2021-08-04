@@ -434,19 +434,19 @@ a {
 }
 
 a:link {
-  color: #fff;
+  color: #000;
 }
 
 a:visited {
-  color: #fff;
+  color: #000;
 }
 
 a:hover {
-  color: #fff;
+  color: #000;
 }
 
 a:active {
-  color: #fff;
+  color: #000;
 }
 
 input::-ms-clear {
