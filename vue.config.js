@@ -37,7 +37,7 @@ const cdn = {
   // 开发环境
   dev: {
     css: ['https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css'],
-    js: []
+    js: ['https://lib.baomitu.com/rough.js/3.1.0/rough.umd.js'] // Rough.js是小（<9 KB）图形库，可以让你在画粗略，手绘般的，风格。该库定义了用于绘制直线、曲线、圆弧、多边形、圆和椭圆的图元。它还支持绘制SVG 路径。
   },
   // 生产环境
   build: {

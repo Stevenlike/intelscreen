@@ -3,15 +3,15 @@
  * @Github: https://github.com/Stevenlike
  * @Date: 2021-08-01 15:28:42
  * @LastEditors: steven
- * @LastEditTime: 2021-08-02 01:28:09
+ * @LastEditTime: 2021-08-10 09:34:32
  * @Description: 有问题，找我
 -->
 <template>
   <section>
     <canvas
       :id="canvasId"
-      :width="canvasWidth"
-      :height="canvasHeight"
+      :width="width"
+      :height="height"
       @mousedown="canvasDown($event)"
       @mouseup="canvasUp($event)"
       @mousemove="canvasMove($event)"
@@ -29,21 +29,36 @@ export default {
       canvasId: 'c_' + guid()
     }
   },
+  props: {
+    width: {
+      default: '100%',
+      type: String
+    },
+    height: {
+      default: '100%',
+      type: String
+    },
+    config: {
+      default: '',
+      type: String
+    }
+  },
   created() {
-    // this.option = require('./config/' + this.config).option
-
-    const canvas = document.querySelector(this.canvasId)
-    console.log(canvas)
+    if (this.config) this.option = require('./config/' + this.config)
+  },
+  mounted() {
+    const canvas = document.getElementById(this.canvasId)
+    if (this.config) this.option.init(canvas)
   },
   methods: {
     canvasDown(e) {
-      console.log('mousedown ' + e)
+      console.log('mousedown ' + JSON.stringify(e))
     },
     canvasMove(e) {
-      console.log('mouseup ' + e)
+      console.log('mouseup ' + JSON.stringify(e))
     },
     canvasUp(e) {
-      console.log('mousemove ' + e)
+      console.log('mousemove ' + JSON.stringify(e))
     }
   }
 }

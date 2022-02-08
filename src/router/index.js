@@ -45,10 +45,10 @@ export const constantRoutes = [
 
   {
     path: '/',
-    name: 'source',
-    component: () => import('@/views/source'),
+    name: 'original',
+    component: () => import('@/views/original'),
     hidden: true,
-    // redirect: '/source',
+    // redirect: '/original',
     children: [
       {
         path: 'echart_one',
@@ -67,16 +67,52 @@ export const constantRoutes = [
         name: 'echart_three',
         component: () => import('@/views/echart/3.vue')
         // hidden: true
+      },
+      {
+        path: 'canvas_one',
+        name: 'canvas_one',
+        component: () => import('@/views/canvas/1.vue')
+        // hidden: true
+      },
+      {
+        path: 'canvas_two',
+        name: 'canvas_two',
+        component: () => import('@/views/canvas/2.vue')
+        // hidden: true
+      },
+      {
+        path: 'canvas_three',
+        name: 'canvas_three',
+        component: () => import('@/views/canvas/3.vue')
+        // hidden: true
+      },
+      {
+        path: 'three_one',
+        name: 'three_one',
+        component: () => import('@/views/three/1.vue')
+        // hidden: true
+      },
+      {
+        path: 'three_two',
+        name: 'three_two',
+        component: () => import('@/views/three/2.vue')
+        // hidden: true
+      },
+      {
+        path: 'three_three',
+        name: 'three_three',
+        component: () => import('@/views/three/3.vue')
+        // hidden: true
       }
     ]
     // path: '/',
     // // component: Layout,
-    // redirect: '/source',
+    // redirect: '/original',
     // children: [
     //   {
-    //     path: 'source',
-    //     name: 'source',
-    //     component: import(/* webpackChunkName: "Home" */ '../views/source.vue'),
+    //     path: 'original',
+    //     name: 'original',
+    //     component: import(/* webpackChunkName: "Home" */ '../views/original.vue'),
     //     meta: { title: '源头', icon: 'dashboard' }
     //   }
     // ]

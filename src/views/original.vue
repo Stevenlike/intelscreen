@@ -3,7 +3,7 @@
  * @Github: https://github.com/Stevenlike
  * @Date: 2021-08-01 14:51:35
  * @LastEditors: steven
- * @LastEditTime: 2021-08-04 23:20:21
+ * @LastEditTime: 2021-08-08 22:14:48
  * @Description: 有问题，找我
 -->
 <template>
@@ -37,9 +37,15 @@
           <span slot="title">canvas</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="2-1">canvas1</el-menu-item>
-          <el-menu-item index="2-2">canvas2</el-menu-item>
-          <el-menu-item index="2-3">canvas3</el-menu-item>
+          <el-menu-item index="2-1">
+            <router-link to="/canvas_one">canvas1</router-link>
+          </el-menu-item>
+          <el-menu-item index="2-2">
+            <router-link to="/canvas_two">canvas2</router-link>
+          </el-menu-item>
+          <el-menu-item index="2-3">
+            <router-link to="/canvas_three">canvas3</router-link>
+          </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
       <el-submenu index="3">
@@ -48,15 +54,21 @@
           <span slot="title">three</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="3-1">three1</el-menu-item>
-          <el-menu-item index="3-2">three2</el-menu-item>
-          <el-menu-item index="3-3">three3</el-menu-item>
+          <el-menu-item index="3-1">
+            <router-link to="/three_one">three1</router-link>
+          </el-menu-item>
+          <el-menu-item index="3-2">
+            <router-link to="/three_two">three2</router-link>
+          </el-menu-item>
+          <el-menu-item index="3-3">
+            <router-link to="/three_three">three3</router-link>
+          </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
 
       <el-menu-item index="4">
         <i class="el-icon-setting"></i>
-        <span slot="title">导航四</span>
+        <span slot="title">其他</span>
       </el-menu-item>
     </el-menu>
 
@@ -66,7 +78,7 @@
 
 <script>
 export default {
-  name: 'source',
+  name: 'original',
   data() {
     return {
       activeIndex: '1'
