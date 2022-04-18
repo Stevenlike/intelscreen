@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d0e8ff3"],{"8c3e":function(n,t,e){"use strict";e.r(t);var s=e("2877"),a=Object(s.a)({},(function(){var n=this.$createElement,t=this._self._c||n;return t("div",[t("h3",[this._v("canvas 第二个")]),t("wjf-Canvas",{attrs:{config:"",width:"510",height:"510"}})],1)}),[],!1,null,null,null);t.default=a.exports}}]);

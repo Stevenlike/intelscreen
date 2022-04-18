@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d0ce7b4"],{6048:function(e,t,n){"use strict";n.r(t);var c=n("2877"),r=Object(c.a)({},(function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("h3",[this._v("three 第三个")]),t("wjf-three",{attrs:{config:"方格3"}})],1)}),[],!1,null,null,null);t.default=r.exports}}]);
