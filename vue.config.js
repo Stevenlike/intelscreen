@@ -45,7 +45,7 @@ const cdn = {
     js: [
       'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js',
       'https://cdn.jsdelivr.net/npm/vue-router@3.2.0/dist/vue-router.min.js',
-      'https://cdn.jsdelivr.net/npm/vuex@3.4.1/dist/vuex.min.js',
+      'https://cdn.jsdelivr.net/npm/vuex@3.1.1/dist/vuex.min.js',
       'https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js',
       'https://cdn.bootcss.com/js-cookie/2.2.0/js.cookie.min.js',
       'https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js'
