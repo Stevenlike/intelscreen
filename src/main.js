@@ -3,15 +3,16 @@
  * @Github: https://github.com/Stevenlike
  * @Date: 2021-02-23 18:06:16
  * @LastEditors: steven
- * @LastEditTime: 2021-08-02 00:02:40
+ * @LastEditTime: 2022-02-08 13:49:32
  */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store' // vuex
-/* 组件 */
+/* 自定义组件 */
 import '@/components/index.js'
 /* 外部组件 */
+// elementUI
 import 'element-ui/lib/theme-chalk/index.css'
 import element from '@/components/element/index'
 /* 初始化样式 */

@@ -1,5 +1,5 @@
 const path = require('path') // 路径
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin') // 去掉注释
+const TerserPlugin = require('terser-webpack-plugin') // 去掉注释
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin // 打包分析
 
@@ -61,7 +61,7 @@ module.exports = {
   // eslint-loader 是否在保存的时候检查
   lintOnSave: true,
   // 相对于outputDir的静态资源(js、css、img、fonts)目录
-  assetsDir: '',
+  assetsDir: 'public',
   // 是否使用包含运行时编译器的 Vue 构建版本
   runtimeCompiler: false,
   // 生产环境是否生成 sourceMap 文件
@@ -133,16 +133,15 @@ module.exports = {
       // gzip-end
       // 去掉注释
       myConfig.plugins.push(
-        new UglifyJsPlugin({
-          uglifyOptions: {
-            output: {
-              comments: false // 去掉注释
-            },
+        new TerserPlugin({
+          terserOptions: {
+            ecma: undefined,
+            warnings: false,
+            parse: {},
             compress: {
-              warnings: false,
               drop_console: true,
               drop_debugger: false,
-              pure_funcs: ['console.log'] //移除console
+              pure_funcs: ['console.log'] // 移除console
             }
           }
         })
